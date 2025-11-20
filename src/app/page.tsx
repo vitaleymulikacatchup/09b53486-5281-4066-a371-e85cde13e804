@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
@@ -7,13 +7,13 @@ import TagAbout from '@/components/sections/about/TagAbout';
 import FeatureCardFive from '@/components/sections/feature/FeatureCardFive';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
-import MetricCardThree from '@/components/sections/metric/MetricCardThree';
+import MetricCardThree from '@/components/sections/metrics/MetricCardThree';
 import TeamCardOne from '@/components/sections/team/TeamCardOne';
 import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 import SocialProofTwo from '@/components/sections/socialProof/SocialProofTwo';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
-import { CreditCard, Facebook, Heart, Instagram, Quote, Settings, Shield, Smile, Sparkles, Star, Stethoscope, TrendingUp, Twitter, UserCheck, Users, Zap } from 'lucide-react';
+import { Award, CreditCard, Facebook, Heart, Instagram, Quote, Settings, Shield, Smile, Sparkles, Star, Stethoscope, TrendingUp, Twitter, UserCheck, Users, Zap } from 'lucide-react';
 
 export default function DentalClinicPage() {
   return (
@@ -21,12 +21,12 @@ export default function DentalClinicPage() {
       defaultButtonVariant="text-stagger"
       defaultTextAnimation="entrance-slide"
       borderRadius="rounded"
-      contentWidth="default"
-      sizing="default"
-      background="default"
-      cardStyle="default"
-      primaryButtonStyle="default"
-      secondaryButtonStyle="default"
+      contentWidth="medium"
+      sizing="medium"
+      background="circleGradient"
+      cardStyle="glass-elevated"
+      primaryButtonStyle="gradient"
+      secondaryButtonStyle="glass"
       showBlurBottom={false}
     >
       <div id="nav" data-section="nav">
@@ -206,7 +206,7 @@ export default function DentalClinicPage() {
           metrics={[
             { id: "1", icon: Users, title: "Happy Patients", value: "5,000+" },
             { id: "2", icon: Star, title: "Satisfaction Rate", value: "98%" },
-            { id: "3", icon: Shield, title: "Years Experience", value: "15+" },
+            { id: "3", icon: Award, title: "Years Experience", value: "15+" },
             { id: "4", icon: Heart, title: "Successful Treatments", value: "10,000+" }
           ]}
         />
